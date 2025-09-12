@@ -6,26 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page</title>
     <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
     <div class="bg">
         <img id="bg-img" src="background-pic.jpeg">
+        <div class="layer"></div>
     </div>
-    <div class="layer"></div>
     <div class="nav">
-        <img id="logo" src="logo.jpeg">
+        <div id="logo">
+            <span><i>Cafe Lumiere</i></span>
+            <img src="logo.jpeg"></div>
         <div class="option">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About Us</a>
-            <li><a href="#menu">Menu</a></li>
-            <li><a href="#contact">Contact Us</a></li>
+            <li><a href="#home"><i class="fa-solid fa-home"></i> Home</a></li>
+            <li><a href="#about"><i class="fa-solid fa-address-card"></i> About Us</a>
+            <li><a href="#menu"><i class="fa-solid fa-book"></i> Menu</a></li>
+            <li><a href="#contact"><i class="fa-solid fa-phone"></i> Contact Us</a></li>
+            <li><a href="#login"><i class="fa-solid fa-user"></i> Login</a></li>
+            <li><a href="cart"><i class="fa-solid fa-cart-shopping"></i> Cart</a></li>
         </div>
     </div>
-    <section id="home">
+     <section id="home">
         <div class="top">
-            <h4>COFFEE</h4>
-            <h4>CORNER</h4>
+            <span><h4>COFFEE</h4></span>
+            <span><h4>CORNER</h4></span>
         </div>
         <div class="heading">
             <h1>Caffinate Your Day!</h1>
@@ -34,7 +41,7 @@
         <button id="get">Get a Coffee</button>
     </section>
     <section id="about">
-        <span>About Us</span>
+        <span><i>About Us</i></span>
         <div class="box">
             <div class="left">
                 <img src="cup.jpeg">
@@ -50,7 +57,7 @@
             </div>
         </div>
     </section>
-    <section id="menu">
+    <!--<section id="menu">
         <div class="outer">
             <img src="outer-img.webp">
             <div class="layer1"></div>
@@ -172,4 +179,4 @@
     </section>
 </body>
 
-</html>
+</html> -->
