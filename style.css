@@ -296,7 +296,7 @@ font-size:14px;
 } */
 
 .coffee{
-    height:850px;
+    height:950px;
     background-color: rgba(233, 166, 80, 0.7);
     width:100%;
     display:flex;
@@ -304,8 +304,13 @@ font-size:14px;
     align-items: center;
     flex-wrap:wrap;
 }
-.coffee div{
+.card{
+    width:26%;
     height:350px;
+
+}
+.front, .back{
+       height:350px;
     width:25%;
     background-color: rgb(251, 251, 250);
     padding:10px;
@@ -315,18 +320,16 @@ font-size:14px;
 align-items: center;
 font-size:24px;
 color:brown;
-margin-top:30px;
-transition: all 0.6s;
+ position: absolute;
+    backface-visibility: hidden;
 }
-.coffee div:active{
-    transform:rotateY(180deg);
-}
-.coffee div img{
+
+.front img{
     height:250px;
     width:85%;
     margin-top:5px;
 }
-.coffee div button{
+.front button{
     height:25px;
     width:50%;
     margin-top:18px;
@@ -341,6 +344,7 @@ transition: all 0.6s;
     display:flex;
     flex-direction:column;
     align-items: center;
+    transform: rotateY(180deg);
 }
 .back p{
     font-size:18px;
@@ -352,7 +356,12 @@ transition: all 0.6s;
     color:black;
     margin:10px;
 list-style:disc;
-
+}
+.coffee.flipped.front{
+     transform: rotateY(180deg);
+}
+.coffee.flipped.front{
+      transform: rotateY(0deg);
 }
 /*#contact{
 height:500px;
